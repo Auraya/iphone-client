@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SpeakTextTableViewCell" rowHeight="77" id="KGk-i7-Jjw" customClass="SpeakTextTableViewCell" customModule="ArmorVox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="microphone" translatesAutoresizingMaskIntoConstraints="NO" id="XzI-b2-UBT">
+                        <rect key="frame" x="8" y="8" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="XzI-b2-UBT" secondAttribute="height" multiplier="1:1" id="Ns0-gj-ckk"/>
+                            <constraint firstAttribute="width" constant="60" id="jei-WD-2AI"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ST5-ro-onC">
+                        <rect key="frame" x="252" y="8" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="354-hN-p3U"/>
+                            <constraint firstAttribute="width" secondItem="ST5-ro-onC" secondAttribute="height" multiplier="1:1" id="ufq-am-mQF"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="textLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPH-vA-Vdc">
+                        <rect key="frame" x="122" y="28" width="77" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ST5-ro-onC" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Bth-tE-qFx"/>
+                    <constraint firstItem="XzI-b2-UBT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="SAo-ab-080"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="XzI-b2-UBT" secondAttribute="bottom" constant="0.5" id="aOt-uy-U9u"/>
+                    <constraint firstItem="XzI-b2-UBT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="aYm-Ft-uaz"/>
+                    <constraint firstItem="ST5-ro-onC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="cJ6-lF-8Rf"/>
+                    <constraint firstItem="FPH-vA-Vdc" firstAttribute="centerY" secondItem="XzI-b2-UBT" secondAttribute="centerY" id="oFL-J8-pFZ"/>
+                    <constraint firstItem="FPH-vA-Vdc" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="rOn-h1-Fuh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="microphoneImageView" destination="XzI-b2-UBT" id="aip-xM-RFB"/>
+                <outlet property="microphoneWidthLayoutConstraint" destination="jei-WD-2AI" id="wiD-mq-ViG"/>
+                <outlet property="textToSpeakLabel" destination="FPH-vA-Vdc" id="8YN-Cf-4uP"/>
+                <outlet property="tickImageView" destination="ST5-ro-onC" id="5c7-cR-Poa"/>
+                <outlet property="tickImageWidthLayoutConstraint" destination="354-hN-p3U" id="LUZ-Rd-XPt"/>
+            </connections>
+            <point key="canvasLocation" x="26" y="68.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="microphone" width="60" height="60"/>
+    </resources>
+</document>

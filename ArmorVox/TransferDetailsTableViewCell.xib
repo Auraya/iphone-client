@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TransferDetailsTableViewCell" rowHeight="120" id="KGk-i7-Jjw" customClass="TransferDetailsTableViewCell" customModule="ArmorVox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount ($)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rh9-Q3-SIv">
+                        <rect key="frame" x="8" y="16" width="87" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WQ5-Aq-4Jx">
+                        <rect key="frame" x="215" y="11" width="97" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="97" id="BAN-Nr-6qi"/>
+                            <constraint firstAttribute="height" constant="30" id="m6P-qR-aOL"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description for payee (optional)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykk-8S-iOH">
+                        <rect key="frame" x="8" y="49" width="241" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h4I-Zx-gxh">
+                        <rect key="frame" x="8" y="78" width="304" height="30"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rh9-Q3-SIv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="1bX-7j-d4x"/>
+                    <constraint firstAttribute="trailing" secondItem="WQ5-Aq-4Jx" secondAttribute="trailing" constant="8" id="6hL-Gb-5rF"/>
+                    <constraint firstItem="rh9-Q3-SIv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Dbe-5w-bJC"/>
+                    <constraint firstItem="h4I-Zx-gxh" firstAttribute="trailing" secondItem="WQ5-Aq-4Jx" secondAttribute="trailing" id="EvI-6Q-bq1"/>
+                    <constraint firstItem="h4I-Zx-gxh" firstAttribute="leading" secondItem="ykk-8S-iOH" secondAttribute="leading" id="JgV-Pr-0W8"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="h4I-Zx-gxh" secondAttribute="bottom" constant="3.5" id="UXS-yD-oi9"/>
+                    <constraint firstItem="h4I-Zx-gxh" firstAttribute="top" secondItem="ykk-8S-iOH" secondAttribute="bottom" constant="8" id="WEW-lr-IHb"/>
+                    <constraint firstAttribute="trailing" secondItem="WQ5-Aq-4Jx" secondAttribute="trailing" constant="8" id="eZa-K1-Nfr"/>
+                    <constraint firstItem="WQ5-Aq-4Jx" firstAttribute="centerY" secondItem="rh9-Q3-SIv" secondAttribute="centerY" id="lJ6-dj-8OQ"/>
+                    <constraint firstItem="ykk-8S-iOH" firstAttribute="top" secondItem="WQ5-Aq-4Jx" secondAttribute="bottom" constant="8" id="mv0-Pg-bm6"/>
+                    <constraint firstItem="ykk-8S-iOH" firstAttribute="leading" secondItem="rh9-Q3-SIv" secondAttribute="leading" id="wZP-qs-ANu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <gestureRecognizers/>
+            <connections>
+                <outlet property="amountTextField" destination="WQ5-Aq-4Jx" id="HBI-cM-Ow7"/>
+                <outlet property="descriptionTextField" destination="h4I-Zx-gxh" id="y70-DQ-bd0"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="84"/>
+        </tableViewCell>
+    </objects>
+</document>

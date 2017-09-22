@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="81" id="KGk-i7-Jjw" customClass="NewTransferOptionsTableViewCell" customModule="ArmorVox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="81"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="81"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wco-5I-xqd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="80.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Pww-kT-mDc">
+                                <rect key="frame" x="0.0" y="5" width="63.5" height="71"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HM7-yU-KYi">
+                                        <rect key="frame" x="0.0" y="0.0" width="63.5" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="f9H-dp-GV8"/>
+                                            <constraint firstAttribute="width" secondItem="HM7-yU-KYi" secondAttribute="height" multiplier="21:20" id="he6-k2-1fz"/>
+                                        </constraints>
+                                        <state key="normal" image="transfer"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transfer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9b1-u0-Vib">
+                                        <rect key="frame" x="0.0" y="60" width="63.5" height="11"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="21G-Ka-WsH">
+                                <rect key="frame" x="88" y="6" width="60" height="68.5"/>
+                                <subviews>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLQ-Rg-qUW">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="XDr-v6-KwN"/>
+                                            <constraint firstAttribute="width" secondItem="SLQ-Rg-qUW" secondAttribute="height" multiplier="20:20" id="h3n-BA-yIV"/>
+                                        </constraints>
+                                        <state key="normal" image="payAnyone"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay anyone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOw-ne-Jys">
+                                        <rect key="frame" x="0.0" y="60" width="60" height="8.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7FN-a8-YHa">
+                                <rect key="frame" x="173" y="5" width="62.5" height="71"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMV-HQ-qeF">
+                                        <rect key="frame" x="0.0" y="0.0" width="62.5" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="BrF-A7-7LF"/>
+                                            <constraint firstAttribute="width" secondItem="FMV-HQ-qeF" secondAttribute="height" multiplier="31:30" id="FpY-Rx-6EN"/>
+                                        </constraints>
+                                        <state key="normal" image="payBills"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay bills" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stI-tE-koG">
+                                        <rect key="frame" x="0.0" y="60" width="62.5" height="11"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kBU-zF-VX7">
+                                <rect key="frame" x="260" y="5" width="60" height="71"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0f-7S-0nw">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="c0f-7S-0nw" secondAttribute="height" multiplier="1:1" id="Mjv-h5-1es"/>
+                                            <constraint firstAttribute="height" constant="60" id="uuL-0L-1bS"/>
+                                        </constraints>
+                                        <state key="normal" image="mobile"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IjY-tQ-75Z">
+                                        <rect key="frame" x="0.0" y="60" width="60" height="11"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wco-5I-xqd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="LIk-GR-etC"/>
+                    <constraint firstAttribute="bottom" secondItem="wco-5I-xqd" secondAttribute="bottom" id="d8d-YQ-19B"/>
+                    <constraint firstAttribute="trailing" secondItem="wco-5I-xqd" secondAttribute="trailing" id="gEG-iD-X44"/>
+                    <constraint firstItem="wco-5I-xqd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="moV-R0-n1L"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mobileButtonHeight" destination="uuL-0L-1bS" id="L5d-Sn-935"/>
+                <outlet property="payAnyoneButtonHeight" destination="XDr-v6-KwN" id="IX3-GJ-WmC"/>
+                <outlet property="payBillsButtonHeight" destination="BrF-A7-7LF" id="S2Z-Ne-Hmp"/>
+                <outlet property="transferButtonHeight" destination="f9H-dp-GV8" id="24J-d1-Miu"/>
+            </connections>
+            <point key="canvasLocation" x="38.5" y="62.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="mobile" width="60" height="60"/>
+        <image name="payAnyone" width="60" height="60"/>
+        <image name="payBills" width="60" height="60"/>
+        <image name="transfer" width="60" height="60"/>
+    </resources>
+</document>

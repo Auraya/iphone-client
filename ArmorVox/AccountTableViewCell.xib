@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AccountTableViewCell" rowHeight="165" id="KGk-i7-Jjw" customClass="AccountTableViewCell" customModule="ArmorVox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="165"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="165"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqD-T4-WcU">
+                        <rect key="frame" x="8" y="24" width="139" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDg-Dk-3hI">
+                        <rect key="frame" x="8" y="53" width="92" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IV0-vV-u6U">
+                        <rect key="frame" x="8" y="90" width="132" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXV-W7-eku">
+                        <rect key="frame" x="8" y="119" width="123" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AmountLabel" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIZ-QY-hqv">
+                        <rect key="frame" x="177" y="90" width="102" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AmountLabel" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xsw-kL-AfV">
+                        <rect key="frame" x="177" y="119" width="102" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="GXV-W7-eku" secondAttribute="bottom" constant="16.5" id="7h1-IK-k55"/>
+                    <constraint firstItem="GXV-W7-eku" firstAttribute="leading" secondItem="IV0-vV-u6U" secondAttribute="leading" id="Bp1-Pd-QpB"/>
+                    <constraint firstItem="yIZ-QY-hqv" firstAttribute="centerY" secondItem="IV0-vV-u6U" secondAttribute="centerY" id="K0V-eM-CV5"/>
+                    <constraint firstItem="MDg-Dk-3hI" firstAttribute="leading" secondItem="nqD-T4-WcU" secondAttribute="leading" id="RAH-GB-TS6"/>
+                    <constraint firstItem="IV0-vV-u6U" firstAttribute="leading" secondItem="MDg-Dk-3hI" secondAttribute="leading" id="RVl-Y9-ADy"/>
+                    <constraint firstItem="IV0-vV-u6U" firstAttribute="top" secondItem="MDg-Dk-3hI" secondAttribute="bottom" constant="20" id="U9w-e9-XwC"/>
+                    <constraint firstItem="Xsw-kL-AfV" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Y8x-x2-rzL"/>
+                    <constraint firstItem="yIZ-QY-hqv" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="ZdJ-PL-n5L"/>
+                    <constraint firstItem="MDg-Dk-3hI" firstAttribute="top" secondItem="nqD-T4-WcU" secondAttribute="bottom" constant="8" id="a0h-m0-b1d"/>
+                    <constraint firstItem="GXV-W7-eku" firstAttribute="top" secondItem="IV0-vV-u6U" secondAttribute="bottom" constant="8" id="m2g-dl-Pv8"/>
+                    <constraint firstItem="nqD-T4-WcU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="16" id="pcX-x8-zhh"/>
+                    <constraint firstItem="Xsw-kL-AfV" firstAttribute="centerY" secondItem="GXV-W7-eku" secondAttribute="centerY" id="uxL-4z-RqX"/>
+                    <constraint firstItem="nqD-T4-WcU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="xao-zr-cYj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="accountCodeLabel" destination="MDg-Dk-3hI" id="xoZ-TK-6ca"/>
+                <outlet property="accountNumberLabel" destination="nqD-T4-WcU" id="5Od-uY-IqS"/>
+                <outlet property="availableBalanceLabel" destination="yIZ-QY-hqv" id="A7k-aL-iQZ"/>
+                <outlet property="currentBalanceLabel" destination="Xsw-kL-AfV" id="2NY-82-HKy"/>
+            </connections>
+            <point key="canvasLocation" x="26" y="112.5"/>
+        </tableViewCell>
+    </objects>
+</document>
